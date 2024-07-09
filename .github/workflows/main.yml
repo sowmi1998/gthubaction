@@ -21,6 +21,19 @@ jobs:
         run:  | 
           echo Test new
           echo Test
+  job2:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4 #it will clone the current repo on the ubuntu runner
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute set of commands
+        run: |
+          echo execute hi
+          echo hi hi
+    
+    
   
       
     
