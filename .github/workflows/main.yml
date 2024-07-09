@@ -18,8 +18,9 @@ jobs:
       - name: Run a single command
         run: echo hello world
       - name: Run another command
-        run: echo Test | echo Test new
-      
+        run:  | 
+          echo Test new
+          echo Test
   
       
     
