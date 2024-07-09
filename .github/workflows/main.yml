@@ -1,0 +1,24 @@
+# to write any comment use # in YAML
+
+name: This is our first workflow
+
+#nxt we will write how will this workflow execute
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch: #this means the workflow executed by you manually
+jobs:
+  job1: #this is job name
+    runs-on: ubuntu-latest
+      #give the name of OS where job is executed
+    steps:
+      - name: Run a single command
+        run: echo hello world
+      
+  
+      
+    
+    
